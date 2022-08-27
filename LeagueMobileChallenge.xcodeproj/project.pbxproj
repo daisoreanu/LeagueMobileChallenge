@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021C4B0928B4F1CC003E7070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B0828B4F1CC003E7070 /* AppDelegate.swift */; };
+		021C4B0B28B4F1CC003E7070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B0A28B4F1CC003E7070 /* SceneDelegate.swift */; };
+		021C4B1228B4F1CD003E7070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B1128B4F1CD003E7070 /* Assets.xcassets */; };
+		021C4B1528B4F1CD003E7070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B1328B4F1CD003E7070 /* LaunchScreen.storyboard */; };
+		021C4B2028B4F1CE003E7070 /* LeagueMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B1F28B4F1CE003E7070 /* LeagueMobileChallengeTests.swift */; };
+		021C4B2A28B4F1CE003E7070 /* LeagueMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B2928B4F1CE003E7070 /* LeagueMobileChallengeUITests.swift */; };
+		021C4B2C28B4F1CE003E7070 /* LeagueMobileChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B2B28B4F1CE003E7070 /* LeagueMobileChallengeUITestsLaunchTests.swift */; };
+		021C4B3B28B4F264003E7070 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B3A28B4F264003E7070 /* AppAppearance.swift */; };
+		021C4B3F28B4F2B5003E7070 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B3D28B4F2B5003E7070 /* RootViewController.swift */; };
+		021C4B4028B4F2B5003E7070 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B3E28B4F2B5003E7070 /* RootViewController.xib */; };
+		021C4B4328B4F34D003E7070 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4228B4F34D003E7070 /* ApiEndpoint.swift */; };
+		021C4B4528B4F38C003E7070 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4428B4F38C003E7070 /* ApiConstants.swift */; };
+		021C4B4728B4F57D003E7070 /* ApiNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4628B4F57D003E7070 /* ApiNetworkError.swift */; };
+		021C4B4B28B4F8FD003E7070 /* AuthTokenEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4A28B4F8FD003E7070 /* AuthTokenEndpoints.swift */; };
+		021C4B4D28B516BA003E7070 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4C28B516BA003E7070 /* APIController.swift */; };
+		021C4B5028B51DA5003E7070 /* ApiDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B4F28B51DA5003E7070 /* ApiDataParser.swift */; };
+		021C4B5228B561FB003E7070 /* ApiNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B5128B561FB003E7070 /* ApiNetworkService.swift */; };
+		021C4B5428B56946003E7070 /* ApiNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B5328B56946003E7070 /* ApiNetworkManager.swift */; };
+		021C4B5628B56A60003E7070 /* ApiStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B5528B56A60003E7070 /* ApiStorageService.swift */; };
+		021C4B5A28B71337003E7070 /* AuthTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B5928B71337003E7070 /* AuthTokenResponse.swift */; };
+		021C4B5F28B71D56003E7070 /* DataFeedEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B5E28B71D56003E7070 /* DataFeedEndpoints.swift */; };
+		021C4B6128B726B7003E7070 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B6028B726B7003E7070 /* PostResponse.swift */; };
+		021C4B6328B731CE003E7070 /* UserEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B6228B731CE003E7070 /* UserEndpoints.swift */; };
+		021C4B6528B732A6003E7070 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B6428B732A6003E7070 /* UserResponse.swift */; };
+		021C4B6728B7397F003E7070 /* ApiReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B6628B7397F003E7070 /* ApiReachabilityService.swift */; };
+		021C4B6F28B7746E003E7070 /* UserPostsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B6D28B7746E003E7070 /* UserPostsCollectionViewController.swift */; };
+		021C4B7028B7746F003E7070 /* UserPostsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B6E28B7746E003E7070 /* UserPostsCollectionViewController.xib */; };
+		021C4B7428B779F0003E7070 /* UserPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B7228B779F0003E7070 /* UserPostCollectionViewCell.swift */; };
+		021C4B7528B779F0003E7070 /* UserPostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B7328B779F0003E7070 /* UserPostCollectionViewCell.xib */; };
+		021C4B7C28B78608003E7070 /* EmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B7A28B78608003E7070 /* EmptyCollectionViewCell.swift */; };
+		021C4B7D28B78608003E7070 /* EmptyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B7B28B78608003E7070 /* EmptyCollectionViewCell.xib */; };
+		021C4B7F28B787F4003E7070 /* UserPostsCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B7E28B787F4003E7070 /* UserPostsCollectionViewModel.swift */; };
+		021C4B8428B94F6E003E7070 /* UserPostsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B8328B94F6E003E7070 /* UserPostsSection.swift */; };
+		021C4B8628B9504D003E7070 /* InstructionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B8528B9504D003E7070 /* InstructionItemViewModel.swift */; };
+		021C4B8928B95141003E7070 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B8828B95141003E7070 /* ArrayExtension.swift */; };
+		021C4B8B28B951C3003E7070 /* UserPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B8A28B951C3003E7070 /* UserPostViewModel.swift */; };
+		021C4B8E28B9566D003E7070 /* InstructionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B8C28B9566D003E7070 /* InstructionsCollectionViewCell.swift */; };
+		021C4B8F28B9566D003E7070 /* InstructionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C4B8D28B9566D003E7070 /* InstructionsCollectionViewCell.xib */; };
+		021C4B9128B9581C003E7070 /* UserPostSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B9028B9581C003E7070 /* UserPostSectionViewModel.swift */; };
+		021C4B9328B98732003E7070 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B9228B98732003E7070 /* UIViewControllerExtension.swift */; };
+		021C4B9528B9874E003E7070 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C4B9428B9874E003E7070 /* UIViewExtension.swift */; };
+		53431BBD3982D074BE887FDF /* libPods-LeagueMobileChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D75EE8DCFEB7ADAB866B2228 /* libPods-LeagueMobileChallengeTests.a */; };
+		D3C58E18D480B4F361E0AA54 /* libPods-LeagueMobileChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3763DDB7D1A7603C9366813 /* libPods-LeagueMobileChallengeUITests.a */; };
+		EFB656965C37803735530211 /* Pods_LeagueMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC6209EE22085FEB37FBEEC /* Pods_LeagueMobileChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		021C4B1C28B4F1CE003E7070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 021C4AFD28B4F1CC003E7070 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 021C4B0428B4F1CC003E7070;
+			remoteInfo = LeagueMobileChallenge;
+		};
+		021C4B2628B4F1CE003E7070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 021C4AFD28B4F1CC003E7070 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 021C4B0428B4F1CC003E7070;
+			remoteInfo = LeagueMobileChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021C4B0528B4F1CC003E7070 /* LeagueMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		021C4B0828B4F1CC003E7070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		021C4B0A28B4F1CC003E7070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		021C4B1128B4F1CD003E7070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021C4B1428B4F1CD003E7070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		021C4B1628B4F1CD003E7070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		021C4B1B28B4F1CE003E7070 /* LeagueMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeagueMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		021C4B1F28B4F1CE003E7070 /* LeagueMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMobileChallengeTests.swift; sourceTree = "<group>"; };
+		021C4B2528B4F1CE003E7070 /* LeagueMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeagueMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		021C4B2928B4F1CE003E7070 /* LeagueMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMobileChallengeUITests.swift; sourceTree = "<group>"; };
+		021C4B2B28B4F1CE003E7070 /* LeagueMobileChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMobileChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		021C4B3A28B4F264003E7070 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		021C4B3D28B4F2B5003E7070 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		021C4B3E28B4F2B5003E7070 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		021C4B4228B4F34D003E7070 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		021C4B4428B4F38C003E7070 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		021C4B4628B4F57D003E7070 /* ApiNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworkError.swift; sourceTree = "<group>"; };
+		021C4B4A28B4F8FD003E7070 /* AuthTokenEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenEndpoints.swift; sourceTree = "<group>"; };
+		021C4B4C28B516BA003E7070 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		021C4B4F28B51DA5003E7070 /* ApiDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataParser.swift; sourceTree = "<group>"; };
+		021C4B5128B561FB003E7070 /* ApiNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworkService.swift; sourceTree = "<group>"; };
+		021C4B5328B56946003E7070 /* ApiNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworkManager.swift; sourceTree = "<group>"; };
+		021C4B5528B56A60003E7070 /* ApiStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStorageService.swift; sourceTree = "<group>"; };
+		021C4B5928B71337003E7070 /* AuthTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenResponse.swift; sourceTree = "<group>"; };
+		021C4B5E28B71D56003E7070 /* DataFeedEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeedEndpoints.swift; sourceTree = "<group>"; };
+		021C4B6028B726B7003E7070 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		021C4B6228B731CE003E7070 /* UserEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoints.swift; sourceTree = "<group>"; };
+		021C4B6428B732A6003E7070 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		021C4B6628B7397F003E7070 /* ApiReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReachabilityService.swift; sourceTree = "<group>"; };
+		021C4B6D28B7746E003E7070 /* UserPostsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsCollectionViewController.swift; sourceTree = "<group>"; };
+		021C4B6E28B7746E003E7070 /* UserPostsCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPostsCollectionViewController.xib; sourceTree = "<group>"; };
+		021C4B7228B779F0003E7070 /* UserPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		021C4B7328B779F0003E7070 /* UserPostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPostCollectionViewCell.xib; sourceTree = "<group>"; };
+		021C4B7A28B78608003E7070 /* EmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		021C4B7B28B78608003E7070 /* EmptyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCollectionViewCell.xib; sourceTree = "<group>"; };
+		021C4B7E28B787F4003E7070 /* UserPostsCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsCollectionViewModel.swift; sourceTree = "<group>"; };
+		021C4B8328B94F6E003E7070 /* UserPostsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsSection.swift; sourceTree = "<group>"; };
+		021C4B8528B9504D003E7070 /* InstructionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionItemViewModel.swift; sourceTree = "<group>"; };
+		021C4B8828B95141003E7070 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		021C4B8A28B951C3003E7070 /* UserPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewModel.swift; sourceTree = "<group>"; };
+		021C4B8C28B9566D003E7070 /* InstructionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		021C4B8D28B9566D003E7070 /* InstructionsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsCollectionViewCell.xib; sourceTree = "<group>"; };
+		021C4B9028B9581C003E7070 /* UserPostSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostSectionViewModel.swift; sourceTree = "<group>"; };
+		021C4B9228B98732003E7070 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		021C4B9428B9874E003E7070 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		30E297346CD9E84D716D149D /* Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests/Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B1EB8DCE87630E69D66146F /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC6209EE22085FEB37FBEEC /* Pods_LeagueMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A585CB89B43BC4392BD7B20 /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1622EEC3B3437E99B65ACBF /* Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests/Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3763DDB7D1A7603C9366813 /* libPods-LeagueMobileChallengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeagueMobileChallengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9380C73C180B02D80107E22 /* Pods-LeagueMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallengeTests/Pods-LeagueMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB019EABCB9759D8AEB39613 /* Pods-LeagueMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.release.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C67F7C402B46311C47373649 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallengeTests/Pods-LeagueMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D75EE8DCFEB7ADAB866B2228 /* libPods-LeagueMobileChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeagueMobileChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DC64326F611E9D12AAB9BB /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		021C4B0228B4F1CC003E7070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB656965C37803735530211 /* Pods_LeagueMobileChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B1828B4F1CE003E7070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53431BBD3982D074BE887FDF /* libPods-LeagueMobileChallengeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B2228B4F1CE003E7070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C58E18D480B4F361E0AA54 /* libPods-LeagueMobileChallengeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021C4AFC28B4F1CC003E7070 = {
+			isa = PBXGroup;
+			children = (
+				021C4B0728B4F1CC003E7070 /* LeagueMobileChallenge */,
+				021C4B1E28B4F1CE003E7070 /* LeagueMobileChallengeTests */,
+				021C4B2828B4F1CE003E7070 /* LeagueMobileChallengeUITests */,
+				021C4B0628B4F1CC003E7070 /* Products */,
+				CEAFF3304DF0219D637F396E /* Pods */,
+				8506C68838B691A5C18B46DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		021C4B0628B4F1CC003E7070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B0528B4F1CC003E7070 /* LeagueMobileChallenge.app */,
+				021C4B1B28B4F1CE003E7070 /* LeagueMobileChallengeTests.xctest */,
+				021C4B2528B4F1CE003E7070 /* LeagueMobileChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		021C4B0728B4F1CC003E7070 /* LeagueMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B8728B9511A003E7070 /* Extensions */,
+				021C4B4128B4F2D2003E7070 /* Networking */,
+				021C4B3C28B4F2A3003E7070 /* Screens */,
+				021C4B3928B4F210003E7070 /* Common */,
+				021C4B3828B4F1DE003E7070 /* Resources */,
+				021C4B1628B4F1CD003E7070 /* Info.plist */,
+			);
+			path = LeagueMobileChallenge;
+			sourceTree = "<group>";
+		};
+		021C4B1E28B4F1CE003E7070 /* LeagueMobileChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B1F28B4F1CE003E7070 /* LeagueMobileChallengeTests.swift */,
+			);
+			path = LeagueMobileChallengeTests;
+			sourceTree = "<group>";
+		};
+		021C4B2828B4F1CE003E7070 /* LeagueMobileChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B2928B4F1CE003E7070 /* LeagueMobileChallengeUITests.swift */,
+				021C4B2B28B4F1CE003E7070 /* LeagueMobileChallengeUITestsLaunchTests.swift */,
+			);
+			path = LeagueMobileChallengeUITests;
+			sourceTree = "<group>";
+		};
+		021C4B3828B4F1DE003E7070 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B1328B4F1CD003E7070 /* LaunchScreen.storyboard */,
+				021C4B1128B4F1CD003E7070 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		021C4B3928B4F210003E7070 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B0828B4F1CC003E7070 /* AppDelegate.swift */,
+				021C4B0A28B4F1CC003E7070 /* SceneDelegate.swift */,
+				021C4B3A28B4F264003E7070 /* AppAppearance.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		021C4B3C28B4F2A3003E7070 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B7128B77479003E7070 /* UserPosts */,
+				021C4B6B28B773C6003E7070 /* Root */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		021C4B4128B4F2D2003E7070 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B5B28B71BA4003E7070 /* New */,
+				021C4B4E28B5174C003E7070 /* Old */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		021C4B4E28B5174C003E7070 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B4C28B516BA003E7070 /* APIController.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
+		021C4B5B28B71BA4003E7070 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B6A28B74269003E7070 /* Services */,
+				021C4B6928B74256003E7070 /* Common */,
+				021C4B6828B74241003E7070 /* Parser */,
+				021C4B5D28B71C9F003E7070 /* Endpoints */,
+				021C4B5C28B71BC0003E7070 /* Models */,
+				021C4B5328B56946003E7070 /* ApiNetworkManager.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		021C4B5C28B71BC0003E7070 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B5928B71337003E7070 /* AuthTokenResponse.swift */,
+				021C4B6028B726B7003E7070 /* PostResponse.swift */,
+				021C4B6428B732A6003E7070 /* UserResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		021C4B5D28B71C9F003E7070 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B4228B4F34D003E7070 /* ApiEndpoint.swift */,
+				021C4B4A28B4F8FD003E7070 /* AuthTokenEndpoints.swift */,
+				021C4B5E28B71D56003E7070 /* DataFeedEndpoints.swift */,
+				021C4B6228B731CE003E7070 /* UserEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		021C4B6828B74241003E7070 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B4F28B51DA5003E7070 /* ApiDataParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		021C4B6928B74256003E7070 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B4428B4F38C003E7070 /* ApiConstants.swift */,
+				021C4B4628B4F57D003E7070 /* ApiNetworkError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		021C4B6A28B74269003E7070 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B5128B561FB003E7070 /* ApiNetworkService.swift */,
+				021C4B5528B56A60003E7070 /* ApiStorageService.swift */,
+				021C4B6628B7397F003E7070 /* ApiReachabilityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		021C4B6B28B773C6003E7070 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B3D28B4F2B5003E7070 /* RootViewController.swift */,
+				021C4B3E28B4F2B5003E7070 /* RootViewController.xib */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		021C4B7128B77479003E7070 /* UserPosts */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B8228B9496E003E7070 /* Controller */,
+				021C4B8128B9494C003E7070 /* ViewModels */,
+				021C4B8028B9493A003E7070 /* Views */,
+			);
+			path = UserPosts;
+			sourceTree = "<group>";
+		};
+		021C4B8028B9493A003E7070 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B7228B779F0003E7070 /* UserPostCollectionViewCell.swift */,
+				021C4B7328B779F0003E7070 /* UserPostCollectionViewCell.xib */,
+				021C4B7A28B78608003E7070 /* EmptyCollectionViewCell.swift */,
+				021C4B7B28B78608003E7070 /* EmptyCollectionViewCell.xib */,
+				021C4B8C28B9566D003E7070 /* InstructionsCollectionViewCell.swift */,
+				021C4B8D28B9566D003E7070 /* InstructionsCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		021C4B8128B9494C003E7070 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B7E28B787F4003E7070 /* UserPostsCollectionViewModel.swift */,
+				021C4B8328B94F6E003E7070 /* UserPostsSection.swift */,
+				021C4B8528B9504D003E7070 /* InstructionItemViewModel.swift */,
+				021C4B8A28B951C3003E7070 /* UserPostViewModel.swift */,
+				021C4B9028B9581C003E7070 /* UserPostSectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		021C4B8228B9496E003E7070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B6D28B7746E003E7070 /* UserPostsCollectionViewController.swift */,
+				021C4B6E28B7746E003E7070 /* UserPostsCollectionViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		021C4B8728B9511A003E7070 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				021C4B8828B95141003E7070 /* ArrayExtension.swift */,
+				021C4B9228B98732003E7070 /* UIViewControllerExtension.swift */,
+				021C4B9428B9874E003E7070 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8506C68838B691A5C18B46DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC6209EE22085FEB37FBEEC /* Pods_LeagueMobileChallenge.framework */,
+				D75EE8DCFEB7ADAB866B2228 /* libPods-LeagueMobileChallengeTests.a */,
+				B3763DDB7D1A7603C9366813 /* libPods-LeagueMobileChallengeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAFF3304DF0219D637F396E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC64326F611E9D12AAB9BB /* Pods-LeagueMobileChallenge.debug.xcconfig */,
+				BB019EABCB9759D8AEB39613 /* Pods-LeagueMobileChallenge.release.xcconfig */,
+				B1622EEC3B3437E99B65ACBF /* Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.debug.xcconfig */,
+				30E297346CD9E84D716D149D /* Pods-LeagueMobileChallenge-LeagueMobileChallengeUITests.release.xcconfig */,
+				C67F7C402B46311C47373649 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */,
+				B9380C73C180B02D80107E22 /* Pods-LeagueMobileChallengeTests.release.xcconfig */,
+				4B1EB8DCE87630E69D66146F /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */,
+				6A585CB89B43BC4392BD7B20 /* Pods-LeagueMobileChallengeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		021C4B0428B4F1CC003E7070 /* LeagueMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021C4B2F28B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallenge" */;
+			buildPhases = (
+				1F77D37AE0AE2B3E89921950 /* [CP] Check Pods Manifest.lock */,
+				021C4B0128B4F1CC003E7070 /* Sources */,
+				021C4B0228B4F1CC003E7070 /* Frameworks */,
+				021C4B0328B4F1CC003E7070 /* Resources */,
+				16A5FA7B1A6289715CED8E51 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeagueMobileChallenge;
+			productName = LeagueMobileChallenge;
+			productReference = 021C4B0528B4F1CC003E7070 /* LeagueMobileChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		021C4B1A28B4F1CE003E7070 /* LeagueMobileChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021C4B3228B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeTests" */;
+			buildPhases = (
+				C684D471AFF4F0D0A900511A /* [CP] Check Pods Manifest.lock */,
+				021C4B1728B4F1CE003E7070 /* Sources */,
+				021C4B1828B4F1CE003E7070 /* Frameworks */,
+				021C4B1928B4F1CE003E7070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				021C4B1D28B4F1CE003E7070 /* PBXTargetDependency */,
+			);
+			name = LeagueMobileChallengeTests;
+			productName = LeagueMobileChallengeTests;
+			productReference = 021C4B1B28B4F1CE003E7070 /* LeagueMobileChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		021C4B2428B4F1CE003E7070 /* LeagueMobileChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021C4B3528B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeUITests" */;
+			buildPhases = (
+				B956399EC31BF4B5CA934D5E /* [CP] Check Pods Manifest.lock */,
+				021C4B2128B4F1CE003E7070 /* Sources */,
+				021C4B2228B4F1CE003E7070 /* Frameworks */,
+				021C4B2328B4F1CE003E7070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				021C4B2728B4F1CE003E7070 /* PBXTargetDependency */,
+			);
+			name = LeagueMobileChallengeUITests;
+			productName = LeagueMobileChallengeUITests;
+			productReference = 021C4B2528B4F1CE003E7070 /* LeagueMobileChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		021C4AFD28B4F1CC003E7070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					021C4B0428B4F1CC003E7070 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					021C4B1A28B4F1CE003E7070 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 021C4B0428B4F1CC003E7070;
+					};
+					021C4B2428B4F1CE003E7070 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 021C4B0428B4F1CC003E7070;
+					};
+				};
+			};
+			buildConfigurationList = 021C4B0028B4F1CC003E7070 /* Build configuration list for PBXProject "LeagueMobileChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 021C4AFC28B4F1CC003E7070;
+			productRefGroup = 021C4B0628B4F1CC003E7070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				021C4B0428B4F1CC003E7070 /* LeagueMobileChallenge */,
+				021C4B1A28B4F1CE003E7070 /* LeagueMobileChallengeTests */,
+				021C4B2428B4F1CE003E7070 /* LeagueMobileChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		021C4B0328B4F1CC003E7070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C4B1528B4F1CD003E7070 /* LaunchScreen.storyboard in Resources */,
+				021C4B7028B7746F003E7070 /* UserPostsCollectionViewController.xib in Resources */,
+				021C4B8F28B9566D003E7070 /* InstructionsCollectionViewCell.xib in Resources */,
+				021C4B7D28B78608003E7070 /* EmptyCollectionViewCell.xib in Resources */,
+				021C4B1228B4F1CD003E7070 /* Assets.xcassets in Resources */,
+				021C4B4028B4F2B5003E7070 /* RootViewController.xib in Resources */,
+				021C4B7528B779F0003E7070 /* UserPostCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B1928B4F1CE003E7070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B2328B4F1CE003E7070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A5FA7B1A6289715CED8E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F77D37AE0AE2B3E89921950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B956399EC31BF4B5CA934D5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C684D471AFF4F0D0A900511A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		021C4B0128B4F1CC003E7070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C4B3B28B4F264003E7070 /* AppAppearance.swift in Sources */,
+				021C4B5028B51DA5003E7070 /* ApiDataParser.swift in Sources */,
+				021C4B9328B98732003E7070 /* UIViewControllerExtension.swift in Sources */,
+				021C4B6128B726B7003E7070 /* PostResponse.swift in Sources */,
+				021C4B0928B4F1CC003E7070 /* AppDelegate.swift in Sources */,
+				021C4B5A28B71337003E7070 /* AuthTokenResponse.swift in Sources */,
+				021C4B6F28B7746E003E7070 /* UserPostsCollectionViewController.swift in Sources */,
+				021C4B5F28B71D56003E7070 /* DataFeedEndpoints.swift in Sources */,
+				021C4B4B28B4F8FD003E7070 /* AuthTokenEndpoints.swift in Sources */,
+				021C4B4528B4F38C003E7070 /* ApiConstants.swift in Sources */,
+				021C4B5428B56946003E7070 /* ApiNetworkManager.swift in Sources */,
+				021C4B3F28B4F2B5003E7070 /* RootViewController.swift in Sources */,
+				021C4B9528B9874E003E7070 /* UIViewExtension.swift in Sources */,
+				021C4B8428B94F6E003E7070 /* UserPostsSection.swift in Sources */,
+				021C4B9128B9581C003E7070 /* UserPostSectionViewModel.swift in Sources */,
+				021C4B6728B7397F003E7070 /* ApiReachabilityService.swift in Sources */,
+				021C4B5628B56A60003E7070 /* ApiStorageService.swift in Sources */,
+				021C4B8B28B951C3003E7070 /* UserPostViewModel.swift in Sources */,
+				021C4B4728B4F57D003E7070 /* ApiNetworkError.swift in Sources */,
+				021C4B7428B779F0003E7070 /* UserPostCollectionViewCell.swift in Sources */,
+				021C4B6328B731CE003E7070 /* UserEndpoints.swift in Sources */,
+				021C4B8E28B9566D003E7070 /* InstructionsCollectionViewCell.swift in Sources */,
+				021C4B0B28B4F1CC003E7070 /* SceneDelegate.swift in Sources */,
+				021C4B5228B561FB003E7070 /* ApiNetworkService.swift in Sources */,
+				021C4B4328B4F34D003E7070 /* ApiEndpoint.swift in Sources */,
+				021C4B8928B95141003E7070 /* ArrayExtension.swift in Sources */,
+				021C4B7C28B78608003E7070 /* EmptyCollectionViewCell.swift in Sources */,
+				021C4B4D28B516BA003E7070 /* APIController.swift in Sources */,
+				021C4B6528B732A6003E7070 /* UserResponse.swift in Sources */,
+				021C4B8628B9504D003E7070 /* InstructionItemViewModel.swift in Sources */,
+				021C4B7F28B787F4003E7070 /* UserPostsCollectionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B1728B4F1CE003E7070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C4B2028B4F1CE003E7070 /* LeagueMobileChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C4B2128B4F1CE003E7070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C4B2A28B4F1CE003E7070 /* LeagueMobileChallengeUITests.swift in Sources */,
+				021C4B2C28B4F1CE003E7070 /* LeagueMobileChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		021C4B1D28B4F1CE003E7070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 021C4B0428B4F1CC003E7070 /* LeagueMobileChallenge */;
+			targetProxy = 021C4B1C28B4F1CE003E7070 /* PBXContainerItemProxy */;
+		};
+		021C4B2728B4F1CE003E7070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 021C4B0428B4F1CC003E7070 /* LeagueMobileChallenge */;
+			targetProxy = 021C4B2628B4F1CE003E7070 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		021C4B1328B4F1CD003E7070 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				021C4B1428B4F1CD003E7070 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		021C4B2D28B4F1CE003E7070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		021C4B2E28B4F1CE003E7070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		021C4B3028B4F1CE003E7070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DC64326F611E9D12AAB9BB /* Pods-LeagueMobileChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeagueMobileChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		021C4B3128B4F1CE003E7070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB019EABCB9759D8AEB39613 /* Pods-LeagueMobileChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeagueMobileChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		021C4B3328B4F1CE003E7070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67F7C402B46311C47373649 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeagueMobileChallenge.app/LeagueMobileChallenge";
+			};
+			name = Debug;
+		};
+		021C4B3428B4F1CE003E7070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9380C73C180B02D80107E22 /* Pods-LeagueMobileChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeagueMobileChallenge.app/LeagueMobileChallenge";
+			};
+			name = Release;
+		};
+		021C4B3628B4F1CE003E7070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1EB8DCE87630E69D66146F /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeagueMobileChallenge;
+			};
+			name = Debug;
+		};
+		021C4B3728B4F1CE003E7070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A585CB89B43BC4392BD7B20 /* Pods-LeagueMobileChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLPMJ9L76X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisoreanu.LeagueMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeagueMobileChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021C4B0028B4F1CC003E7070 /* Build configuration list for PBXProject "LeagueMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C4B2D28B4F1CE003E7070 /* Debug */,
+				021C4B2E28B4F1CE003E7070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021C4B2F28B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C4B3028B4F1CE003E7070 /* Debug */,
+				021C4B3128B4F1CE003E7070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021C4B3228B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C4B3328B4F1CE003E7070 /* Debug */,
+				021C4B3428B4F1CE003E7070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021C4B3528B4F1CE003E7070 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C4B3628B4F1CE003E7070 /* Debug */,
+				021C4B3728B4F1CE003E7070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 021C4AFD28B4F1CC003E7070 /* Project object */;
+}
